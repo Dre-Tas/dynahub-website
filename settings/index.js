@@ -8,7 +8,7 @@ const // cache environment context
     // dest: prd
     PRD = 'prd',
     // dest: env
-    OUT = ENV === 'development' ? DEV : PRD,
+    OUT = ENV === 'development' ? DEV : DEV,
 
     // config: meta
     app = {
