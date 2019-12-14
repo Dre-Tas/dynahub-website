@@ -2,15 +2,12 @@
   "name": "new-project",
   "version": "1.0.0",
   "scripts": {
-    "start": "cross-env NODE_ENV=development gulp",
-    "lint": "NODE_ENV=production eslint --fix src/",
-    "test": "npm run lint",
-    "development": "SET NODE_ENV=development gulp & node settings/index.js",
-    "production": "NODE_ENV=production gulp production",
+    "start": "NODE_ENV=development gulp",
+    "development": "NODE_ENV=development gulp",
+    "production": "cross-env NODE_ENV=production gulp production",
     "preflight": "NODE_ENV=production gulp preflight",
     "deploy": "NODE_ENV=production gulp deploy",
-    "serve": "NODE_ENV=production gulp serve",
-    "build": "set NODE_ENV=development gulp"
+    "serve": "NODE_ENV=production gulp serve"
   },
   "repository": {
     "type": "git",
@@ -38,7 +35,8 @@
     "css-mqpacker": "^7.0.0",
     "cssnano": "^4.1.0",
     "del": "^3.0.0",
-    "eslint": "^5.9.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.17.0",
     "ghooks": "^2.0.4",
     "gulp": "^4.0.0",
     "gulp-if": "^2.0.2",
@@ -62,7 +60,9 @@
     "rollup-plugin-terser": "^3.0.0"
   },
   "dependencies": {
+    "babel-eslint": "^10.0.3",
     "cross-env": "^6.0.3",
+    "eslint-plugin-import": "^2.19.1",
     "nodemon": "^2.0.2"
   }
 }
