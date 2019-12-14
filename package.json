@@ -2,7 +2,7 @@
   "name": "new-project",
   "version": "1.0.0",
   "scripts": {
-    "start": "NODE_ENV=development gulp",
+    "start": "cross-env NODE_ENV=development gulp",
     "development": "NODE_ENV=development gulp",
     "production": "cross-env NODE_ENV=production gulp production",
     "preflight": "NODE_ENV=production gulp preflight",
