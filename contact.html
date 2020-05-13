@@ -1,6 +1,6 @@
 ---
 title: Contact
-heading: Do you have questions? Get in touch!
+heading: Questions? Get in touch!
 description: We'd love to help you!
 
 map:
@@ -8,11 +8,10 @@ map:
   longitude: 151.257127
   zoom: 13
 ---
-<div class="map" id="map"></div>
 
 
 <div class="contact-box">
-	<form action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form">
+	<!-- <form action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form">
 		<input type="hidden" name="_to" value="andrea.tassera7@gmail.com" />
 		<input type="text" name="_gotcha" style="display: none;">
 
@@ -26,13 +25,15 @@ map:
 		<textarea name="message" id="message" placeholder="Enter your message..."></textarea>
 
 		<input type="submit" value="Send Message" />
-	</form>
+	</form> -->
 
 	<div class="contact-details">
-		<h3 class="editable">Email</h3>
-		<p><a href="mailto:andrea.tassera7@gmail.com">andrea.tassera7@gmail.com</a></p>
+		<h3 class="editable">Email me at:</h3>
+		<p><a href="mailto:andrea.tassera7@gmail.com">info@dynahub.com</a></p>
 	</div>
 </div>
+
+<div class="map" id="map"></div>
 
 <script type="text/javascript">
 	window.mapData = {{ page.map | jsonify }};
@@ -171,4 +172,4 @@ map:
 		});
 	}
 </script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key={{ site.google_maps_javascript_api_key }}&amp;callback=initMap"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtdQWNsrZtJdN00Ffwxm4EO57ynv4UMfI&amp;callback=initMap"></script>
